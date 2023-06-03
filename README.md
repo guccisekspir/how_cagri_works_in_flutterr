@@ -2,6 +2,31 @@
 
 This project is mock project which show my working style on Flutter. I will explain step by step in this file. This projects main purpose is showing my working style & principle so creating working perfect app is not on purpose :-) 
 
+
+## State Managements
+
+I used to use only BLoC as a state management in my Flutter projects. BLoC is realy good state management because it is suitable for structured architecture, provide Single-responsibility principle which part of SOLID also developer's is crazy!
+
+But sometimes BLoC is not enough for manage states. So in my new projects I started to use Provider and BLoC together. So let me tell you with examples.
+
+When I want to manage state for complicated and progress align scenario I use BLoC. For example in this project I can give Auth flow. In Auth there are a lot of flows and states. And we need to act according this states. So BLoC is really good solution for this case. 
+You can see my sample BLoC implementation in [here](https://github.com/guccisekspir/how_cagri_works_in_flutterr/tree/main/lib/blocs/auth_bloc/bloc)
+
+But when I want to store some states and reuse on different places, Provider is better solution. For example AppTheme or CurrentUser. If I want to store my UserState alive and re-use in different places I create provider for this.
+
+[Here](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/lib/providers/current_user_provider.dart) you can find my current user provider implementation
+
+## Business Logic & Project Architecture
+
+In Flutter I am using BLoC Pattern architecture. In a summary, there are 3 layers. Presentation Layer, Domain Layer, Data Layer. 
+
+- Presentation Layer means consuming BLoC and present data in UI. So [this is example](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/lib/pages/auth_page/auth_page.dart) of Presentation Layer in this project.
+
+- Domain Layer is responsible for business logic. In this project [repositories](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/lib/data/auth_repository.dart) and [blocs](https://github.com/guccisekspir/how_cagri_works_in_flutterr/tree/main/lib/blocs/auth_bloc/bloc) are example of domain layer.
+
+- Data Layer is responsible for communicate with server-side data.In this projecty [apiClients](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/lib/data/auth_api_client.dart) are example of data layer.
+
+
 ## Theming
 
 Theming is most important feature for mobile applications. Flutter provide base theming feature but sometimes FlutterTheme cant be enough for your project. So I created my own Theming structure for implement in projects. Theming functions should be implement on beggining on project because theming using in almost everywhere! So migration can be painful🥵
@@ -46,30 +71,6 @@ final _router = GoRouter(
 
  [Here ](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/lib/utils/router.dart)my sample GoRouter implements
 
-
-
-## State Managements
-
-I used to use only BLoC as a state management in my Flutter projects. BLoC is realy good state management because it is suitable for structured architecture, provide Single-responsibility principle which part of SOLID also developer's is crazy!
-
-But sometimes BLoC is not enough for manage states. So in my new projects I started to use Riverpod and BLoC together. So let me tell you with examples.
-
-When I want to manage state for complicated and progress align scenario I use BLoC. For example in this project I can give Auth flow. In Auth there are a lot of flows and states. And we need to act according this states. So BLoC is really good solution for this case. 
-You can see my sample BLoC implementation in [here](https://github.com/guccisekspir/how_cagri_works_in_flutterr/tree/main/lib/blocs/auth_bloc/bloc)
-
-But when I want to store some states and reuse on different places, Provider is better solution. For example AppTheme or CurrentUser. If I want to store my UserState alive and re-use in different places I create provider for this.
-
-[Here](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/lib/providers/current_user_provider.dart) you can find my current user provider implementation
-
-## Business Logic & Project Architecture
-
-In Flutter I am using BLoC Pattern architecture. In a summary, there are 3 layers. Presentation Layer, Domain Layer, Data Layer. 
-
-- Presentation Layer means consuming BLoC and present data in UI. So [this is example](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/lib/pages/auth_page/auth_page.dart) of Presentation Layer in this project.
-
-- Domain Layer is responsible for business logic. In this project [repositories](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/lib/data/auth_repository.dart) and [blocs](https://github.com/guccisekspir/how_cagri_works_in_flutterr/tree/main/lib/blocs/auth_bloc/bloc) are example of domain layer.
-
-- Data Layer is responsible for communicate with server-side data.In this projecty [apiClients](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/lib/data/auth_api_client.dart) are example of data layer.
 
 
 ## Extensions
