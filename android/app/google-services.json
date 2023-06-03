@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "797128906760",
+    "project_id": "kipss-ai",
+    "storage_bucket": "kipss-ai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797128906760:android:1f85db600ce0964ebe59bd",
+        "android_client_info": {
+          "package_name": "com.example.kipss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797128906760-oanutsdunfmlff61085954tqbg2vuk3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSnk52X_adkEkx_EFGOi6ETZbbv3pZRIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797128906760-banj4kb019jn90cijh52g27d5gg84tdr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "797128906760-rj71frtovbvravan20vqkmt2fji7df2h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sekspir.kipss.yapayzeka"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797128906760:android:97b3fe12af1ab02abe59bd",
+        "android_client_info": {
+          "package_name": "com.sekspir.kipss.yapayzeka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797128906760-hvf4nbj6979qb75ge578hmi8facqquip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sekspir.kipss.yapayzeka",
+            "certificate_hash": "07a06872dad5aa6a6770a50d7fa9e8c95bd55a06"
+          }
+        },
+        {
+          "client_id": "797128906760-oanutsdunfmlff61085954tqbg2vuk3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSnk52X_adkEkx_EFGOi6ETZbbv3pZRIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797128906760-banj4kb019jn90cijh52g27d5gg84tdr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "797128906760-rj71frtovbvravan20vqkmt2fji7df2h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sekspir.kipss.yapayzeka"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
