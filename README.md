@@ -26,6 +26,13 @@ In Flutter I am using BLoC Pattern architecture. In a summary, there are 3 layer
 
 - Data Layer is responsible for communicate with server-side data.In this projecty [apiClients](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/lib/data/auth_api_client.dart) are example of data layer.
 
+## Testing
+
+If testing in on wants, I follow TDD approaching. Althought I am on the side of test should be create first then create logic, sometimes due to financial or time problems clients dont want to spend time to testing. Anyway you can find my sample testing in this project
+
+here testing for [BuildType](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/test/unit_tests/build_type_test.dart)
+here testing for Extension of [DateTime](https://github.com/guccisekspir/how_cagri_works_in_flutterr/blob/main/test/unit_tests/date_time_ext_test.dart)
+
 
 ## Theming
 
